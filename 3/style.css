@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  background-color: rgb(16, 157, 233);
+  transition: background-color 0.2s;
+}
+
+.btn:disabled, .btn:hover:disabled {
+  background-color: rgba(0,0,0,.1);
+  border: 1px solid rgba(0, 0, 0, .1);
+  cursor: not-allowed;
+  }
+
+.open-btn {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgba(16, 157, 233, 0.8);
+}
+
+.chat {
+  display: none;
+}
+
+.chat.active {
+  display: block;
+}
+
+.input-block {
+  padding: 40px 20px;
+  border: 1px solid rgb(223, 217, 217);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.input {
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  background-color: rgb(201, 231, 246);
+  width: 50%;
+}
+
+.chat-field {
+  padding: 10px 20px;
+  border: 1px solid rgb(223, 217, 217);
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+.my-message {
+  text-align: right;
+}
